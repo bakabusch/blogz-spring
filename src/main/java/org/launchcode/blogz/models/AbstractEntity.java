@@ -11,8 +11,8 @@ public abstract class AbstractEntity {
 
 	private int uid;
 	
-	@Id
-    @GeneratedValue
+	@Id // primary key -- responds to a column in DB
+    @GeneratedValue // will create value for us
     @NotNull
     @Column(name = "uid", unique = true)
 	public int getUid() {

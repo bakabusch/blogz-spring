@@ -16,6 +16,11 @@ public interface UserDao extends CrudRepository<User, Integer> {
     
     List<User> findAll();
     
+    User findByUsername(String username); //Erik Added
+    
+   // List<User> findByUsername(String username);
+    //User setUsername(String username);
+    
     // TODO - add method signatures as needed
 
 }
